@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 頁首 */
+.header {
+    background-color: #D35400;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.header-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* 歡迎區塊 */
+.welcome-section {
+    background-color: #E74C3C;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.welcome-title {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.welcome-subtitle {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.start-button {
+    background-color: #FFC300;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 200px;
+    justify-content: center;
+}
+
+.spanish-flag {
+    width: 30px;
+    height: 20px;
+}
+
+/* 課程等級 */
+.course-levels {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.levels-title {
+    color: #333;
+    margin-bottom: 40px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.levels-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.level-card {
+    background-color: #FFF9C4;
+    border: 2px solid #FF5722;
+    border-radius: 10px;
+    padding: 20px 40px;
+    text-align: center;
+    min-width: 200px;
+}
+
+.level-card h3 {
+    margin-bottom: 10px;
+}
+
+/* 練習區塊 */
+.practice-section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.practice-section h2 {
+    margin-bottom: 40px;
+    padding-left: 20px;
+}
+
+.practice-grid {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.practice-card {
+    text-align: center;
+}
+
+.practice-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+
+.practice-label {
+    background-color: #FFF9C4;
+    border: 2px solid #FF5722;
+    border-radius: 10px;
+    padding: 15px 30px;
+    min-width: 180px;
+}
+
+.practice-label p:first-child {
+    margin-bottom: 5px;
+}
+
+/* 關於區塊 */
+.about-section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+.about-content {
+    background-color: #FFF9C4;
+    border: 2px solid #FF5722;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+}
+
+.about-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* 頁尾 */
+.footer {
+    background-color: #D35400;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+/* 響應式設計 */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .header-nav {
+        margin-top: 15px;
+        gap: 20px;
+    }
+
+    .welcome-title {
+        font-size: 32px;
+    }
+
+    .welcome-subtitle {
+        font-size: 18px;
+    }
+
+    .levels-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .level-card {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .practice-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .practice-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .practice-label {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .welcome-section {
+        padding: 40px 15px;
+    }
+
+    .welcome-title {
+        font-size: 28px;
+    }
+
+    .welcome-subtitle {
+        font-size: 16px;
+    }
+
+    .start-button {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+}

@@ -261,10 +261,10 @@ document.querySelectorAll('.practice-card').forEach(card => {
                     alert('為什麼JavaScript總是心情不好？ 因為它總是處於「undefined」的狀態。');
                     break;
                 case 'práctica':
-                    alert('先去背單字再來練習~~~~~');
+                    alert('“我寫的程式再也沒有錯誤了！”朋友：“哇，怎麼做到的？”我淡定地說：“簡單，我把整個檔案都刪了。');
                     break;
                 case 'escucha':
-                    alert('聽力練習請耐心等待');
+                    alert('學打程式的人有三種狀態：寫不出來、跑不起來、修不好。');
                     break;
                 default:
                     alert('當程式員遇到麻煩時，他們會說：“這是一個無解的問題！”但事實上，這只是他們忘了加分號。');
